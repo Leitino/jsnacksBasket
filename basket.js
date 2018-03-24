@@ -17,6 +17,8 @@ for (var i = 0; i < 100; i++) {
     'puntiFatti' : casuale(0, 50),
     'rimbalzi' : casuale(0, 30),
     'falli' : casuale(0, 10),
+    'tiri2punti' : tiri2Percentuale(),
+    'tiri3punti' : tiri3Percentuale(),
 
   }
     console.log(nuovo_giocatore)
@@ -51,4 +53,20 @@ function randomCode() {
 
 function casuale(inizio,fine) {
   return Math.floor(Math.random() * (inizio + fine +1)) + inizio;
+}
+
+function tiri2Percentuale() {
+  var tiri=0
+  tiri = casuale(0, 30)
+  var tiriRiusciti = casuale(0, tiri)
+  var percentuale= tiriRiusciti/tiri*100
+  return percentuale
+}
+
+function tiri3Percentuale() {
+  var tiri=0
+  tiri = casuale(0, 20)
+  var tiriRiusciti = casuale(0, tiri)
+  var percentuale= tiriRiusciti/tiri*100
+  return percentuale
 }
