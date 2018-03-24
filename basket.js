@@ -14,11 +14,11 @@ var giocatori = []
 for (var i = 0; i < 100; i++) {
   var nuovo_giocatore = {
     'numGiocatore' : randomCode(),
-    'puntiFatti' : casuale(0, 50),
+    'puntiFatti' : casuale(2, 50),
     'rimbalzi' : casuale(0, 30),
     'falli' : casuale(0, 10),
-    'tiri2punti' : tiri2Percentuale(),
-    'tiri3punti' : tiri3Percentuale(),
+    'tiri2punti_percentuale' : tiri2Percentuale(),
+    'tiri3punti_percentuale' : tiri3Percentuale(),
 
   }
     console.log(nuovo_giocatore)
